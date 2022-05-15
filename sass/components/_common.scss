@@ -5,12 +5,20 @@ body {
 }
 
 .section {
+    padding: 60px 0;
+    @media screen and (min-width: 1200px) {
     padding: 94px 0;
+    }
 }
 
 .section--noPaddingTop{
-    padding-top: 0px;
-}
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding-top: 0px;
+    }
+
+    }
 
 .section--otherBackground{
     background-color: #F5F4FA;
@@ -18,12 +26,17 @@ body {
 
 .section__title{
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color-second);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+        }
 }
 
 a {
