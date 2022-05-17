@@ -140,7 +140,7 @@ img {
   display: block;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .logo__footer {
     text-align: center;
   }
@@ -700,14 +700,16 @@ img {
   }
 }
 
-.clients__item {
-  width: calc((100% - 30px) / 2);
-}
-.clients__item:nth-child(even) {
-  margin-left: var(--gap-in-section);
-}
-.clients__item:not(:nth-last-child(-n+2)) {
-  margin-bottom: var(--gap-in-section);
+@media screen and (max-width: 767px) {
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .clients__item:nth-child(even) {
+    margin-left: var(--gap-in-section);
+  }
+  .clients__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: var(--gap-in-section);
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
@@ -789,7 +791,7 @@ img {
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .address__item {
     text-align: center;
   }
@@ -820,13 +822,13 @@ img {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__soc-title {
     text-align: center;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__wrapper {
     margin-bottom: 60px;
   }
@@ -841,7 +843,7 @@ img {
 .footer__soc-list {
   display: flex;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__soc-list {
     justify-content: center;
     align-items: center;
@@ -879,7 +881,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer-form__wrapper {
     width: 100%;
     text-align: center;
@@ -938,7 +940,7 @@ img {
   cursor: pointer;
   border: transparent;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer-form-btn {
     margin-right: auto;
     margin-left: auto;
