@@ -17,8 +17,6 @@
         margin-bottom: var(--gap-in-section);
     }
 }
-
-
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 60px) / 3);
         &:not(:nth-child(3n + 1)){
@@ -42,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
