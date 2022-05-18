@@ -9,14 +9,15 @@
 }
 
 .clients__item{
-    @media screen and (max-width: 767px){    width: calc((100% - 30px) / 2);
-    &:nth-child(even) {
-        margin-left: var(--gap-in-section);
+    @media screen and (max-width: 767px){   
+        width: calc((100% - 30px) / 2);
+        &:nth-child(even) {
+            margin-left: var(--gap-in-section);
+        }
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: var(--gap-in-section);
+        }
     }
-    &:not(:nth-last-child(-n + 2)) {
-        margin-bottom: var(--gap-in-section);
-    }
-}
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 60px) / 3);
         &:not(:nth-child(3n + 1)){

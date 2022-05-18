@@ -12,21 +12,22 @@
 
 .hero__title {
     font-weight: 900;
-    
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--title-color);
-    
     margin: var(--gap-in-section);
     margin: 0 auto;
     margin-bottom: var(--gap-in-section);
-
-    @media screen and (min-width: 480px) {
-        font-size: 26px;
-        line-height: 1.62;
+    @media screen and (max-width: 479px) {
+        max-width: 360px;
+    }
+    @media screen and (min-width: 768px) {
         width: 360px;
     }
+
 
     @media screen and (min-width: 1200px) {
         font-size: 44px;
